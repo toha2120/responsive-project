@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=Poppins:wght@200;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    border: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+
+}
+ul {
+    list-style: none;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 20px;
+}
+.logo{
+    margin-left: 20px;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link li{
+    margin: 0 30px;
+}
+.active{
+    color: #fb2055;
+    text-decoration: underline;
+    font-size: bold;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* header-content */
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/header-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content{
+    color: white;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 5vmin;
+    margin-bottom: 8vmin;
+}
+.link-ctn{
+    color: white;
+    background-color: #fb2055;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.line{
+    width: 100px;
+    height: 3px;
+    background-color: #fb2055;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 1005px;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(42, 39, 85);
+        margin-top: -1200px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+}
