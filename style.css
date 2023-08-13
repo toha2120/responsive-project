@@ -143,6 +143,9 @@ section{
     color: white;
 }
 
+.explore-contant .line{
+    margin: 0px ;
+}
 .explore-contant h1{
     font-size: 7vmin;
 }
@@ -150,6 +153,8 @@ section{
     width: 50%;
     padding-bottom: 30px;
 }
+
+
 .tour{
     display: flex;
 }
@@ -173,6 +178,17 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+
+.footer-text{
+    background-color: rgb(51, 50, 50);
+    height: 110px;
+    text-align: center;
+    color: white;
+}
+.footer-text p{
+    font-size: 2vmin;
+    padding-top: 30px;
 }
 
 
@@ -204,5 +220,58 @@ section{
     }
     .nav-link li{
         margin: 30px auto;
+    }
+
+    /* event section  */
+    .row {
+        flex-direction:column ;
+    }
+    .row .col{
+        padding: 20px 0; 
+    }
+
+    /* explore section  */
+    .explore-contant{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .explore-contant p{
+        width: 90%;
+        padding: 20px;
+    }
+    /* tour section  */
+    .tour{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-contant{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-contant{
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    /* footer-section */
+    .footer-text{
+        background-color: rgb(51, 50, 50);
+        height: 110px;
+        text-align: center;
+        color: white;
+    }
+    .footer-text p{
+        padding-top: 30px;
     }
 }
