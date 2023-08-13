@@ -150,6 +150,30 @@ section{
     width: 50%;
     padding-bottom: 30px;
 }
+.tour{
+    display: flex;
+}
+.text-contant{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.text-contant h1{
+    font-size: 7vmin;
+}
+.text-contant a{
+    margin-top: 10px;
+}
+.image-contant{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
 
 /* responsive */
